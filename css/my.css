@@ -1,41 +1,28 @@
 * {
 	box-sizing: border-box;
 }
-body {
-    font-family: "Proxima Nova", sans-serif;
-}
-
-a {
-	text-decoration: none;
-}
-
-ul {
-    list-style-type: none;
-}
-
-li { 
-    display: inline-block;
-    margin-left: 30px
-}
-
-img {
-    width: 100%;  /* remove */
-}
 
 #container {
-    width: 1240px;
+    width: 1200px;
     margin:auto;
 }
 
 .header {
     border-bottom: solid 1px #999;
     overflow: hidden;
+    margin-bottom: 50px;
+}
+
+body {
+    font-family: "Proxima Nova", sans-serif;
 }
 
 .title {
     float: left;
     font-family: "Bebas Neue", sans-serif;
-    font-size: 48px;   
+    font-size: 48px;
+    letter-spacing: .5px;
+    font-weight: 500   
 }
 
 .navigation {
@@ -43,20 +30,78 @@ img {
     line-height: 72px;
 }
 
+ul {
+    list-style-type: none;
+      margin-bottom: 10px; 
+}
+
+li { 
+    display: inline-block;
+    margin-left: 30px;
+}
+
+h1 {
+	margin-bottom: 0px;
+}
+
+h2 {
+	font-weight: 300;
+	font-size: 32px;
+	margin-bottom: 5px;
+
+}
+
+h3 {
+	color: #4A4A4A;
+	font-size: 16px;
+	font-weight: 300;
+	margin-top: 0px;
+}
+
+.navigation a {
+	font-weight: 100;
+	color: #999;
+	font-size: 16px;
+}
+
+a {
+	text-decoration: none;
+	color: #943C3C;
+	font-weight: 600;
+}
+
+a:hover {
+	color: #7F5A5A;
+}
+
+.cta {
+	text-decoration: underline;
+}
+
+img {
+    width: 100%;  /* remove */
+}
+
+
 .content {
-    width: 760px;  /* remove */
+    width: 800px;  /* remove */
     margin: auto;
     clear: both;
 }
 
 .post {
-    background-color: lightgray;  /* remove */
     border-bottom: solid 1px #999;
+    padding-bottom: 30px;
 }
 
 .posttitle {
     text-align: center;
 }
+
+.post p { 
+	margin-top: 40px;
+}
+
 
 .imgdiv {
 	display: none;
@@ -75,14 +120,50 @@ img {
 
 .imghover:hover > .imgdiv {
 	display: inherit;
+
 }
 
-.footer h2 {
+p.rights {
+	margin: 0px; 
+	padding: 0px; 
+	font-style: italic;
+	color: #999999;
+	font-size: 14px;
+	float: right;
+
+}
+
+.footer h4 {
 	text-align: center;
+	font-size: 28px;
+	font-weight: 300;
+	margin-bottom: 20px;
 }
 
 .three {
 	width: 33%;
 	padding: 0% 2%;
 	float: left;
+}
+
+p.postsummary {
+	margin-bottom: 0px;
+}
+
+p.postsummary1 {
+	margin-top: 20px;
+}
+
+.slide {
+	border-bottom: solid 1px #999;
+    padding-bottom: 30px;
+}
+
+.comments {
+	text-align: center;
+}
+
+.labor {
+	width: 400px;
+	margin-left: 200px;
 }
