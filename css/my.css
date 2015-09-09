@@ -1,1 +1,88 @@
+* {
+	box-sizing: border-box;
+}
+body {
+    font-family: "Proxima Nova", sans-serif;
+}
 
+a {
+	text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li { 
+    display: inline-block;
+    margin-left: 30px
+}
+
+img {
+    width: 100%;  /* remove */
+}
+
+#container {
+    width: 1240px;
+    margin:auto;
+}
+
+.header {
+    border-bottom: solid 1px #999;
+    overflow: hidden;
+}
+
+.title {
+    float: left;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 48px;   
+}
+
+.navigation {
+    float: right;
+    line-height: 72px;
+}
+
+.content {
+    width: 760px;  /* remove */
+    margin: auto;
+    clear: both;
+}
+
+.post {
+    background-color: lightgray;  /* remove */
+    border-bottom: solid 1px #999;
+}
+
+.posttitle {
+    text-align: center;
+}
+
+.imgdiv {
+	display: none;
+	position: absolute;
+	right: 6px;
+	bottom: 6px;
+}
+
+.imgdiv>a {
+	color: white;
+}
+
+.imghover {
+	position: relative;
+}
+
+.imghover:hover > .imgdiv {
+	display: inherit;
+}
+
+.footer h2 {
+	text-align: center;
+}
+
+.three {
+	width: 33%;
+	padding: 0% 2%;
+	float: left;
+}
