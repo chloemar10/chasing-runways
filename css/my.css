@@ -22,7 +22,7 @@ body {
     font-family: "Bebas Neue", sans-serif;
     font-size: 48px;
     letter-spacing: .5px;
-    font-weight: 500   
+    font-weight: 500
 }
 
 .navigation {
@@ -32,10 +32,10 @@ body {
 
 ul {
     list-style-type: none;
-      margin-bottom: 10px; 
+      margin-bottom: 10px;
 }
 
-li { 
+li {
     display: inline-block;
     margin-left: 30px;
 }
@@ -98,7 +98,7 @@ img {
     text-align: center;
 }
 
-.post p { 
+.post p {
 	margin-top: 40px;
 }
 
@@ -124,8 +124,8 @@ img {
 }
 
 p.rights {
-	margin: 0px; 
-	padding: 0px; 
+	margin: 0px;
+	padding: 0px;
 	font-style: italic;
 	color: #999999;
 	font-size: 14px;
@@ -133,7 +133,7 @@ p.rights {
 
 }
 
-.footer h4 {
+#instagram h4 {
 	text-align: center;
 	font-size: 28px;
 	font-weight: 300;
@@ -142,7 +142,7 @@ p.rights {
 
 .three {
 	width: 33%;
-	padding: 0% 2%;
+	padding: 0 2%;
 	float: left;
 }
 
@@ -166,4 +166,9 @@ p.postsummary1 {
 .labor {
 	width: 400px;
 	margin-left: 200px;
+}
+
+#currentPage {
+	color: black;
+	font-weight: bold;
 }
