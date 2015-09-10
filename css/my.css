@@ -172,3 +172,9 @@ p.postsummary1 {
 	color: black;
 	font-weight: bold;
 }
+
+
+#car-list {
+	display: flex;
+	justify-content: space-around;
+}
