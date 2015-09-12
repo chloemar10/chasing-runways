@@ -173,8 +173,23 @@ p.postsummary1 {
 	font-weight: bold;
 }
 
-
-#car-list {
-	display: flex;
-	justify-content: space-around;
+/* carousel */
+.car-list {
+  display: flex;
 }
+.car-main {
+	height: 250px;
+  width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.car-main-img {
+  position: absolute;
+}
+
+.holder {
+	position: relative;
+	width: 580px;
+}
+/* end carousel */

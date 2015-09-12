@@ -13,21 +13,39 @@
   });
 
   // carousel
-  var photos = ['posts/first/1.png', 'posts/first/2.png', 'posts/first/3.png'];
-  var $carList = $('#car-list');
-  photos.forEach(function(photo) {
-    var $li = $('<li/>');
+  var $slider = $('.car-list');
+  var $slider2 = $('.car-main');
+  var transitionTime = 1000;
+
+  function slide($newPhoto) {
     var $img = $('<img />', {
-      src: photo,
+      class: 'car-main-img',
+      src: $newPhoto.find('img').attr('src'),
       alt: 'MyAlt'
     });
-    $img.appendTo($li);
-    $li.appendTo($carList);
-  });
+    $img.appendTo($slider2).hide().fadeIn(transitionTime);
+    $slider2.find(':first-child').fadeOut(transitionTime, function() {
+      $(this).remove();
+    });
+  }
 
-  var $img = $('<img />', {
-    src: photos[0],
-    alt: 'MyAlt'
-  });
-  $img.appendTo($('#car-main'));
+  function changePhoto(direction) {
+    return function() {
+      var newI;
+      var $slides = $slider.find('li');
+      var i = $slider.find('li.active').index();
+      $slides.eq(i).removeClass('active');
+      if (direction === 'next') {
+        newI = $slides.length === i + 1 ? 0 : i + 1;
+      } else {
+        newI = i === 0 ? $slides.length - 1 : i - 1;
+      }
+      var $newPhoto = $slides.eq(newI);
+      $newPhoto.addClass('active');
+      slide($newPhoto);
+    };
+  }
+
+  $('#next').click(changePhoto('next'));
+  $('#prev').click(changePhoto('prev'));
 })();
