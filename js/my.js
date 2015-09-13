@@ -1,8 +1,8 @@
 (function() {
   var chloe = {
     carousel: function() {
-      var $slider = $('.car-list');
-      var $slider2 = $('.car-main');
+      var $slider = $('#car-list');
+      var $slider2 = $('#car-main');
       var transitionTime = 1000;
 
       function slide($newPhoto) {
