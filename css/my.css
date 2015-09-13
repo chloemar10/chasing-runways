@@ -21,7 +21,7 @@ body {
     float: left;
     font-family: "Bebas Neue", sans-serif;
     font-size: 48px;
-    letter-spacing: .5px;
+    letter-spacing: 1px;
     font-weight: 500
 }
 
@@ -31,13 +31,16 @@ body {
 }
 
 ul {
-    list-style-type: none;
-      margin-bottom: 10px;
+  list-style-type: none;
+  margin-bottom: 10px;
 }
 
 li {
-    display: inline-block;
-    margin-left: 30px;
+  display: inline-block;
+}
+
+.navigation li {
+  margin-left: 30px;
 }
 
 h1 {
@@ -174,9 +177,18 @@ p.postsummary1 {
 }
 
 /* carousel */
+#carousel {
+  outline: none;
+}
 .car-list {
   display: flex;
+  padding-left: 0;
 }
+
+.car-list li:hover {
+  border: solid 1px black;
+}
+
 .car-main {
 	height: 250px;
   width: 100%;
